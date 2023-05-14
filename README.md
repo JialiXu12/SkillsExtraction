@@ -5,6 +5,13 @@ This script is designed to extract soft and hard skills from text data (e.g., CV
 
 The extracted skills are stored in a pandas DataFrame and saved as a CSV file.
 
+# Setip
+To set up a virtual environment for this project, follow these steps:
+
+`python -m venv my_env`
+
+`.\my_env\Scripts\activate` 
+
 # Installation
 To install the necessary dependencies, run the following commands:
 pip install -r requirements.txt
