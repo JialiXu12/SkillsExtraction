@@ -1,7 +1,7 @@
 This script is designed to extract soft and hard skills from text data (e.g., CVs or resumes) using pre-trained models from the HuggingFace Model Hub. The script uses two transformer-based models to perform this task:
 
-1. Soft skills extraction: jjzha/jobbert_skill_extraction
-2. Hard skills extraction: jjzha/jobbert_knowledge_extraction
+1. [Soft skills extraction](https://huggingface.co/jjzha/jobbert_skill_extraction)
+2. [Hard/Knowledge skills extraction](https://huggingface.co/jjzha/jobbert_knowledge_extraction)
 
 The extracted skills are stored in a pandas DataFrame and saved as a CSV file.
 
