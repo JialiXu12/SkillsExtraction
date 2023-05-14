@@ -1,9 +1,16 @@
-This script is designed to extract soft and hard skills from text data (e.g., CVs or resumes) using pre-trained models from the HuggingFace Model Hub. The script uses two transformer-based models to perform this task:
+This script is designed to extract soft and hard skills from text data (e.g., CVs or resumes) using pre-trained models from the HuggingFace Model Hub and is compatible with Jupyter Notebook and Python 3.10.1. The script uses two transformer-based models to perform this task:
 
 1. [Soft skills extraction](https://huggingface.co/jjzha/jobbert_skill_extraction)
 2. [Hard/Knowledge skills extraction](https://huggingface.co/jjzha/jobbert_knowledge_extraction)
 
 The extracted skills are stored in a pandas DataFrame and saved as a CSV file.
+
+# Setup
+To set up a virtual environment for this project, follow these steps:
+
+`python -m venv my_env`
+
+`.\my_env\Scripts\activate` 
 
 # Installation
 To install the necessary dependencies, run the following commands:
