@@ -3,3 +3,4 @@ numpy==1.24.3
 transformers==4.29.1
 torch==2.0.0
 ipykernel==6.22.0
+nltk==3.8.1
