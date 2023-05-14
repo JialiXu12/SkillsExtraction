@@ -1,33 +1,34 @@
 This script is designed to extract soft and hard skills from text data (e.g., CVs or resumes) using pre-trained models from the HuggingFace Model Hub. The script uses two transformer-based models to perform this task:
 
-Soft skills extraction: jjzha/jobbert_skill_extraction
-Hard skills extraction: jjzha/jobbert_knowledge_extraction
+1. Soft skills extraction: jjzha/jobbert_skill_extraction
+2. Hard skills extraction: jjzha/jobbert_knowledge_extraction
+
 The extracted skills are stored in a pandas DataFrame and saved as a CSV file.
 
-Installation
+# Installation
 To install the necessary dependencies, run the following commands:
 pip install -r requirements.txt
 
-Usage
+# Usage
 The script expects an input DataFrame 'df' with a column named 'text', which contains the text data from which to extract skills.
 
-Output
+# Output
 The script outputs a DataFrame 'out_df' with two new columns: 'soft_skills' and 'hard_skills'. Each of these columns contains a list of the respective skills extracted from the text data. The DataFrame is then saved to a CSV file located at './output/cv_classified.csv'.
 
-Functions
+# Functions
 aggregate_skill_span(results): This function aggregates consecutive classified entities into one. It also removes invalid skills that are one character and non-alphabetic.
 
 extract_skill_entities(text): This function extracts both soft and hard skills from the provided text.
 
-Customization
+# Customization
 You can adjust the threshold for accepting a skill by changing the score_thres variable. It's set to 0.5 by default.
 
 For debugging purposes, there is a flag print_debug. If set to True, the script prints the extracted skills for each CV.
 
-Note
-This script requires a pandas DataFrame 'df' with a column 'text' as input. Make sure your text data is correctly loaded into 'df'. The script does not handle exceptions related to missing or incompatible data.
+# Note
+This script requires a pandas DataFrame 'df' with a column 'text' as input. Make sure your text data is correctly loaded into 'df'. The script handles exceptions related to missing or incompatible data.
 
-Reference
+# Reference
 @inproceedings{zhang-etal-2022-skillspan,
     title = "{S}kill{S}pan: Hard and Soft Skill Extraction from {E}nglish Job Postings",
     author = "Zhang, Mike  and
